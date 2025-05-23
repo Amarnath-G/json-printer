@@ -1,0 +1,6 @@
+{
+  "project": "Jenkins Integration",
+  "version": "1.0.0",
+  "active": true,
+  "owners": ["alice", "bob"]
+}

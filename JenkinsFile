@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone Repo') {
+            steps {
+                git url: 'https://github.com/YOUR_USERNAME/json-printer.git', branch: 'main'
+            }
+        }
+
+        stage('Run Python Script') {
+            steps {
+                sh 'python3 read_json.py'
+            }
+        }
+    }
+}
